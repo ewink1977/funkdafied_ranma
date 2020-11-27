@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="funkdafied.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> -->
     <style>
         /* Fonts:  */
         /* font-family: 'Bebas Neue', cursive; HEADLINES */
@@ -21,7 +21,7 @@
         * {
             margin: 0;
             padding: 0;
-            outline: 1px solid black;
+            /* outline: 1px solid black; */
         }
 
         a {
@@ -51,7 +51,6 @@
         }
 
         div#display {
-            display: flex;
             min-height: 1000px;
         }
 
@@ -70,9 +69,10 @@
             width: 100%;
         }
 
-        div#wrapper div#content div.seperator {
+        div.seperator {
             min-height: 25px;
             background-color: #FF0448;
+            padding: 0 1em;
         }
 
         div#wrapper div#content div.seperator p.sep {
@@ -81,12 +81,66 @@
             font-size: 0.7em;
             text-align: center;
             padding-top: 5px;
+            padding-bottom: 5px;
             text-transform: uppercase;
         }
 
-        div#wrapper div#content header img {
+        img.header-img {
             display: block;
             margin: 0 auto;
+        }
+
+        h2.mob-title-upper {
+            font-size: 1.5em;
+            font-family: 'Bebas Neue', cursive;
+            margin-left: 10%;
+            margin-bottom: -20px;
+        }
+
+        h2.mob-title-lower {
+            font-size: 1.5em;
+            font-family: 'Bebas Neue', cursive;
+            margin-left: 30%;
+            margin-top: -20px;
+        }
+
+        h1.mob-head {
+            font-size: 3em;
+            font-family: 'Bowlby One', cursive;
+            color: #d00038;
+            text-shadow: 1px 1px 3px lightslategray;
+            margin-left: 5%;
+        }
+
+        .mobile-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            margin-bottom: 2px;
+        }
+
+        .mobile-nav ul li {
+            display: inline-block;
+            width: 140px;
+            font-family: 'Bowlby One', cursive;
+            font-size: medium;
+            background-color: #d00038;
+            padding: 0.5em;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 3px;
+            box-shadow: 1px 1px 2px lightslategray;
+        }
+
+        .mobile-nav a {
+            text-decoration: none;
+            color: black;
         }
 
         div#wrapper div#content section {
@@ -98,7 +152,7 @@
             font-size: 2.5em;
             text-align: center;
             text-transform: uppercase;
-            text-shadow: 2px 2px 5px lightslategray;
+            text-shadow: 2px 2px 3px lightslategray;
             color: #d00038;
         }
 
@@ -133,22 +187,91 @@
             padding-top: 2px;
             font-size: 0.5em;
             font-weight: bold;
+            font-family: 'Roboto', sans-serif;
             text-align: center;
             text-transform: uppercase;
             color: black;
         }
 
         footer a.redbg {
+            font-family: 'Roboto', sans-serif;
             text-decoration: dotted;
             color: whitesmoke;
         }
+
+        @media only screen and (max-width: 480px) {
+            nav .navimg, .nav-top{
+                display: none;
+            }
+
+            #display {
+                display: block;
+            }
+
+            h1.mob-head {
+                font-size: 2em;
+            }
+
+            img.header-img {
+                display: none;
+            }
+
+            img.mob-sizing {
+                width: 100px;
+            }
+        }
+
+        @media only screen and (min-width: 481px) {
+            nav, .navimg, .nav-top {
+                display: none;
+            }
+
+            #display {
+                display: block;
+            }
+
+            h1.mob-head {
+                font-size: 2.5em;
+            }
+
+            img.header-img {
+                display: none;
+            }
+
+            img.mob-sizing {
+                width: 150px;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            div.mobilehead {
+                display: none;
+            }
+
+            #display {
+                display: flex;
+            }
+
+            nav, .navimg, .nav-top {
+                display: inherit;
+            }
+
+            img.header-img {
+                display: block;
+            }
+
+            img.mob-sizing {
+                width: auto;
+            }
+        }
+        
     </style>
 </head>
 <body>
     <div id="wrapper">
         <div id="display">
             <nav>
-                <img src="img/ranleft.png" alt="Ranma ½">
+                <a href="index.html"><img src="img/ranleft.png" alt="Ranma ½" class="nav-top"></a>
                 <a href="characters.html"><img src="img/charbios.jpg" alt="Character Bios" class="navimg"></a>
                 <a href="engagementchart.html"><img src="img/engagec.jpg" alt="Engagement Chart" class="navimg"></a>
                 <a href="information.html"><img src="img/411.jpg" alt="Information" class="navimg"></a>
@@ -157,18 +280,28 @@
                 <a href="ewink.html"><img src="img/ewinkr.jpg" alt="ewink! (That's me.)" class="navimg"></a>
             </nav>
             <div id="content">
-                <header>
-                    <img src="img/titlebanner.jpg" alt="ewink's FUNKDAFIED Ranma ½ website!">
-                    <!-- <div class="mobilehead" data-role="header">
-                        <div class="navbar" data-role="navbar">
-                            <ul>
-                                <li><a href="#" class="ui-btn-active"></a>HOME</li>
-                                <li><a href="#" ></a>CHARACTERS</li>
-                                <li><a href="#" ></a>ENGAGEMENT CHART</li>
-                            </ul>
-                        </div>
-                    </div> -->
-                </header>
+                    <img src="img/titlebanner.jpg" alt="ewink's FUNKDAFIED Ranma ½ website!" class="header-img">
+                <div class="mobilehead">
+                    <div id="mobile-title">
+                        <h2 class="mob-title-upper">ewink's</h2>
+                        <h1 class="mob-head">FUNKDAFIED</h1>
+                        <h2 class="mob-title-lower">Ranma ½ Website</h2>
+                    </div>
+                    <div class="mobile-nav">
+                        <ul class="mobile-nav">
+                            <a href="index.html"><li>HOME</li></a>
+                            <a href="characters.html"><li>CHARACTERS</li></a>
+                            <a href="engagementchart.html"><li>ENGAGEMENTS</li></a>
+                            <a href="information.html"><li>INFORMATION</li></a>
+                        </ul>
+                        <ul class="mobile-nav">
+                            <a href="music.html"><li>MUSIC</li></a>
+                            <a href="fanfics.html"><li>FAN FICS</li></a>
+                            <a href="ewink.html"><li>EWINK</li></a>
+                        </ul>
+                        <!-- /navbar -->
+                    </div>
+                </div>
                 <div class="seperator">
                     <p class="sep">Home of Moon Trek, the 'world famous' Engagement Chart, and 14 year old code.</p>
                 </div>
@@ -176,7 +309,7 @@
                     <h2 class="subhead">Welcome!</h2>
                     <article>
                         <div class="col">
-                            <img src="img/6441.jpg" alt="" class="left">
+                            <img src="img/6441.jpg" alt="" class="left mob-sizing">
                         </div>
                         <div class="col">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eius, maxime ipsam molestiae consequatur, fuga inventore quos nesciunt deleniti totam, officiis at porro eveniet rem accusantium assumenda. Quia, quod modi!</p>
