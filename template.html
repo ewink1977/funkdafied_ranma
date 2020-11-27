@@ -28,11 +28,14 @@
         div#wrapper {
             max-width: 1080px;
             margin: 5px auto;
-            min-height: 1000px;
-            display: flex;
             background-color: white;
             box-shadow: 5px 5px 5px lightslategray;
             border-radius: 15px;
+        }
+
+        div#display {
+            display: flex;
+            min-height: 1000px;
         }
 
         div#wrapper nav {
@@ -69,18 +72,13 @@
             padding: 5px;
         }
 
-        div#wrapper div#content section h2 {
+        div#wrapper div#content section h2.subhead {
             font-family: 'Bowlby One', cursive;
             font-size: 2.5em;
             text-align: center;
             text-transform: uppercase;
             text-shadow: 2px 2px 5px lightslategray;
             color: #d00038;
-        }
-
-        article {
-            display: flex;
-            width: 100%;
         }
 
         div#wrapper div#content section img.left {
@@ -95,31 +93,47 @@
             text-align: justify;
             padding: 5px;
         }
+
+        article {
+            display: flex;
+            width: 100%;
+        }
+
+        footer {
+            min-height: 25px;
+            width: 100%;
+            background-color: #FF0448;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            margin-bottom: 0px;
+        }
     </style>
 </head>
 <body>
     <div id="wrapper">
-        <nav>
-            <img src="img/ranleft.png" alt="">
-        </nav>
-        <div id="content">
-            <header>
-                <img src="img/titlebanner.jpg" alt="">
-            </header>
-            <div class="seperator">
-                <p class="sep">Home of Moon Trek, the 'world famous' Engagement Chart, and 14 year old code.</p>
+        <div id="display">
+            <nav>
+                <img src="img/ranleft.png" alt="">
+            </nav>
+            <div id="content">
+                <header>
+                    <img src="img/titlebanner.jpg" alt="">
+                </header>
+                <div class="seperator">
+                    <p class="sep">Home of Moon Trek, the 'world famous' Engagement Chart, and 14 year old code.</p>
+                </div>
+                <section>
+                    <h2 class="subhead">Welcome!</h2>
+                    <article>
+                        <img src="img/6441.jpg" alt="" class="left">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eius, maxime ipsam molestiae consequatur, fuga inventore quos nesciunt deleniti totam, officiis at porro eveniet rem accusantium assumenda. Quia, quod modi!</p>
+                    </article>
+                </section>
             </div>
-            <div id="mobilenav">
-
-            </div>
-            <section>
-                <h2>Welcome!</h2>
-                <article>
-                    <img src="img/6441.jpg" alt="" class="left">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eius, maxime ipsam molestiae consequatur, fuga inventore quos nesciunt deleniti totam, officiis at porro eveniet rem accusantium assumenda. Quia, quod modi!</p>
-                </article>
-            </section>
         </div>
+        <footer>
+
+        </footer>
     </div>
 </body>
 </html>
