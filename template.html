@@ -17,12 +17,85 @@
         * {
             margin: 0;
             padding: 0;
+            outline: 1px solid black;
         }
 
-        
+        body {
+            background-color: #f6f6f6;
+        }
+
+        div#wrapper {
+            max-width: 1080px;
+            margin: 5px auto;
+            min-height: 1000px;
+            display: flex;
+            background-color: white;
+            box-shadow: 5px 5px 5px lightslategray;
+            border-radius: 15px;
+        }
+
+        div#wrapper nav {
+            display: inline-block;
+            padding-left: 10px;
+            width: 200px;
+        }
+
+        div#wrapper div#content {
+            display: inline-block;
+            width: 100%;
+        }
+
+        div#wrapper div#content div.seperator {
+            min-height: 25px;
+            background-color: #FF0448;
+        }
+
+        div#wrapper div#content div.seperator p.sep {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 0.7em;
+            text-align: center;
+            padding-top: 5px;
+            text-transform: uppercase;
+        }
+
+        div#wrapper div#content header img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div#wrapper div#content section {
+            padding: 5px;
+        }
+
+        div#wrapper div#content section h2 {
+            font-family: 'Bowlby One', cursive;
+            font-size: 2.5em;
+            text-align: center;
+            text-transform: uppercase;
+            color: #d00038;
+        }
     </style>
 </head>
 <body>
-    
+    <div id="wrapper">
+        <nav>
+            <img src="img/ranleft.png" alt="">
+        </nav>
+        <div id="content">
+            <header>
+                <img src="img/titlebanner.jpg" alt="">
+            </header>
+            <div class="seperator">
+                <p class="sep">Home of Moon Trek, the 'world famous' Engagement Chart, and 14 year old code.</p>
+            </div>
+            <div id="mobilenav">
+                
+            </div>
+            <section>
+                <h2>Welcome!</h2>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
