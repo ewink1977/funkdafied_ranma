@@ -1,6 +1,4 @@
-# funkdafied_ranma
-
-<h1>ewink's FUNKDAFIED ranma 1/2 website</h1>
+#ewink's FUNKDAFIED ranma 1/2 website
 
 A modern replacement to my website at https://funkdafied.douglasavenue.com. Code will be updated to make the website load faster and be more consistant throughout. 
 
