@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         /* Fonts:  */
         /* font-family: 'Bebas Neue', cursive; HEADLINES */
@@ -73,7 +74,26 @@
             font-size: 2.5em;
             text-align: center;
             text-transform: uppercase;
+            text-shadow: 2px 2px 5px lightslategray;
             color: #d00038;
+        }
+
+        article {
+            display: flex;
+            width: 100%;
+        }
+
+        div#wrapper div#content section img.left {
+            display: inline-block;
+            margin-left: 10px;
+            box-shadow: 2px 2px 5px lightslategray;
+        }
+
+        div#wrapper div#content section p {
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            text-align: justify;
+            padding: 5px;
         }
     </style>
 </head>
@@ -90,10 +110,14 @@
                 <p class="sep">Home of Moon Trek, the 'world famous' Engagement Chart, and 14 year old code.</p>
             </div>
             <div id="mobilenav">
-                
+
             </div>
             <section>
                 <h2>Welcome!</h2>
+                <article>
+                    <img src="img/6441.jpg" alt="" class="left">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eius, maxime ipsam molestiae consequatur, fuga inventore quos nesciunt deleniti totam, officiis at porro eveniet rem accusantium assumenda. Quia, quod modi!</p>
+                </article>
             </section>
         </div>
     </div>
