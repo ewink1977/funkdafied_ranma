@@ -1,0 +1,177 @@
+        /* Fonts:  */
+        /* font-family: 'Bebas Neue', cursive; HEADLINES */
+        /* font-family: 'Bowlby One', cursive; FUNK STYLED */
+        /* font-family: 'Roboto', sans-serif;  PARAGRAPHS AND WHAT NOT */
+
+        * {
+            margin: 0;
+            padding: 0;
+            /* outline: 1px solid black; */
+        }
+
+        a {
+            text-decoration: none;
+            color: #FF0448;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: #d00038;
+        }
+
+        a:active {
+            text-decoration: dotted;
+        }
+
+        body {
+            background-color: #f6f6f6;
+        }
+
+        div#wrapper {
+            max-width: 1080px;
+            margin: 5px auto;
+            background-color: white;
+            box-shadow: 5px 5px 5px lightslategray;
+            border-radius: 15px;
+        }
+
+        div#display {
+            min-height: 700px;
+        }
+
+        div#wrapper nav {
+            display: inline-block;
+            padding-left: 10px;
+            width: 200px;
+        }
+
+        div#wrapper nav img.nav-img {
+            margin-top: -5px;
+        }
+
+        div#wrapper div#content {
+            display: inline-block;
+            width: 100%;
+        }
+
+        div.seperator {
+            min-height: 25px;
+            background-color: #FF0448;
+            padding: 0 1em;
+        }
+
+        div#wrapper div#content div.seperator p.sep {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 0.7em;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        img.header-img {
+            margin: 0 auto;
+        }
+
+        h2.mob-title-upper {
+            font-size: 1.5em;
+            font-family: 'Bebas Neue', cursive;
+            margin-left: 10%;
+            margin-bottom: -20px;
+        }
+
+        h2.mob-title-lower {
+            font-size: 1.5em;
+            font-family: 'Bebas Neue', cursive;
+            margin-left: 30%;
+            margin-top: -20px;
+        }
+
+        h1.mob-head {
+            font-family: 'Bowlby One', cursive;
+            color: #d00038;
+            text-shadow: 1px 1px 3px lightslategray;
+            margin-left: 5%;
+        }
+
+        .mobile-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        .mob-nav-bar {
+            display: inline;
+            font-family: 'Bowlby One', cursive;
+            font-size: 0.8em;
+            background-color: #d00038;
+            padding: 0.5em;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 3px;
+            box-shadow: 1px 1px 2px lightslategray;
+        }
+
+        .mobile-nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        div#wrapper div#content section {
+            padding: 5px;
+        }
+
+        div#wrapper div#content section h2.subhead {
+            font-family: 'Bowlby One', cursive;
+            font-size: 2.5em;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 3px lightslategray;
+            color: #d00038;
+        }
+
+        div#wrapper div#content section img.left {
+            display: inline-block;
+            margin-left: 10px;
+            box-shadow: 2px 2px 5px lightslategray;
+        }
+
+        div#wrapper div#content section p {
+            display: block;
+            font-family: 'Roboto', sans-serif;
+            text-align: justify;
+            padding: 5px 5px 5px 10px;
+        }
+
+        article {
+            display: flex;
+            width: 100%;
+        }
+
+        footer {
+            min-height: 25px;
+            width: 100%;
+            background-color: #FF0448;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            margin-bottom: 0px;
+        }
+
+        footer p.copyright {
+            padding-top: 2px;
+            font-size: 0.5em;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            color: black;
+        }
+
+        footer a.redbg {
+            font-family: 'Roboto', sans-serif;
+            text-decoration: dotted;
+            color: whitesmoke;
+        }
