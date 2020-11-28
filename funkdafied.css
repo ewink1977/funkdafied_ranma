@@ -27,6 +27,10 @@
             background-color: #f6f6f6;
         }
 
+        .italics {
+            font-style: italic;
+        }
+
         div#wrapper {
             max-width: 1080px;
             margin: 5px auto;
@@ -146,10 +150,23 @@
                 padding: 5px 5px 5px 10px;
             }
 
+            hr.sep-hr {
+                width: 50%;
+                margin: 5px auto;
+                border-top: 1px dotted #d00038;
+            }
+
         article {
             display: flex;
             width: 100%;
         }
+
+            article h3.article-head {
+                font-size: 2em;
+                font-family: 'Bebas Neue', cursive;
+                text-align: center;
+                text-transform: uppercase;
+            }
 
         footer {
             min-height: 25px;
