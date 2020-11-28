@@ -1,7 +1,7 @@
 /* CSS FILE CONTAINING INSTRUCTIONS FOR RESPONSIVE DISPLAY. */
 
 @media only screen and (max-width: 480px) {
-    nav .nav-img, .nav-top{
+    nav .nav-img, .nav-top, img.header-img, img.mob-con-sizing {
         display: none;
     }
 
@@ -11,10 +11,6 @@
 
     h1.mob-head {
         font-size: 2em;
-    }
-
-    img.header-img {
-        display: none;
     }
 
     img.mob-sizing {
@@ -27,7 +23,7 @@
 }
 
 @media only screen and (min-width: 481px) {
-    nav, .nav-img, .nav-top {
+    nav, .nav-img, .nav-top, img.header-img, img.mob-con-sizing {
         display: none;
     }
 
@@ -37,10 +33,6 @@
 
     h1.mob-head {
         font-size: 2.5em;
-    }
-
-    img.header-img {
-        display: none;
     }
 
     img.mob-sizing {
@@ -71,5 +63,9 @@
 
     img.mob-sizing {
         width: auto;
+    }
+
+    img.mob-con-sizing {
+        display: inline-block;
     }
 }
