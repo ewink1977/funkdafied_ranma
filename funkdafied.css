@@ -19,10 +19,6 @@
             color: #d00038;
         }
 
-        a:active {
-            text-decoration: dotted;
-        }
-
         body {
             background-color: #f6f6f6;
         }
@@ -61,6 +57,8 @@
             img.header-img {
                 margin: 0 auto;
             }
+
+            /* MOBILE FRIENDLY CSS DOWN HERE! */
 
             h2.mob-title-upper {
                 font-size: 1.5em;
@@ -107,6 +105,8 @@
                     text-decoration: none;
                     color: black;
                 }
+
+            /* BACK TO UNIVERSAL CSS! */
 
             div.seperator {
                 min-height: 25px;
@@ -160,6 +160,54 @@
             display: flex;
             width: 100%;
         }
+
+/* CODE DEALING WITH THE CHARACTER BIOS NAME LIST! */
+
+            .char-namelist {
+                display: flex;
+                margin: 5px;
+                padding: 3px;
+                border-top: 2px dotted #d00038;
+                border-bottom: 2px dotted #d00038;
+            }
+
+            .char-col-left {
+                display: inline-block;
+                border-right: 3px solid #FF0448;
+                width: 40%;
+            }
+
+            .char-col-right {
+                display: inline-block;
+                border-left: 3px solid #FF0448;
+                width: 40%;
+            }
+
+                p.char-name {
+                    font-size: 1em;
+                    font-family: 'Bowlby One', cursive;
+                    text-align: right;
+                    text-transform: uppercase;
+                    height: 35px;
+                    vertical-align: middle;
+                    color: #d00038;
+                }
+
+                p.char-desc {
+                    font-size: 1em;
+                    font-family: 'Roboto', sans-serif;
+                    text-align: left;
+                    vertical-align: middle;
+                    height: 35px;
+                    color: black;
+                }
+
+                p.tiny-text {
+                    font-size: 0.3em;
+                    font-family: 'Roboto', sans-serif;
+                }
+
+/* CHARACTER BIO PAGE STYLING */
 
             article h3.article-head {
                 font-size: 2em;
