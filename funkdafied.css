@@ -209,12 +209,17 @@
 
 /* CHARACTER BIO PAGE STYLING */
 
-            article h3.article-head {
-                font-size: 2em;
-                font-family: 'Bebas Neue', cursive;
-                text-align: center;
-                text-transform: uppercase;
-            }
+        h3.article-head {
+            font-size: 2em;
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .col {
+            padding: 1%;
+        }
 
         footer {
             min-height: 25px;
